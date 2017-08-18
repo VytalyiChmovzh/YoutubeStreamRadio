@@ -1,0 +1,46 @@
+@import "../../../less/mixins";
+
+.wrapper {
+  .absolute-container();
+  background: url(../../../assets/landing-bg.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    display: inline-block;
+    .absolute-container(@top: 20px, @left: 40px, @bottom: auto, @right: auto);
+    width: 126px;
+    height: 44px;
+    background: url(../../../assets/company-logo.png) no-repeat center center;
+    background-size: 126px 44px;
+  }
+
+  .content {
+    text-align: center;
+
+    .social {
+      .google-plus-button,
+      .google-plus-button:visited {
+        padding: 10px 20px;
+        color:#fff;
+        cursor: pointer;
+        font-size: 18px;
+        background: #db4437;
+        display: inline-block;
+        border-radius: 5px;
+        text-transform: uppercase;
+
+        .fa {
+          font-size: 24px;
+          vertical-align: middle;
+        }
+
+        span {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
